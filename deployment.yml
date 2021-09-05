@@ -30,12 +30,13 @@
         become_user: "{{ user }}"
         vscode_install: false
         vscode_extension:
-          - platformio.platformio-ide
           - cweijan.vscode-office
-          - robole.marky-stats
-          - yzhang.markdown-all-in-one
-          - ms-vsliveshare.vsliveshare-pack
           - mhutchie.git-graph
+          - ms-vsliveshare.vsliveshare-pack
+          - platformio.platformio-ide
+          - robole.marky-stats
+          - streetsidesoftware.code-spell-checker-german
+          - yzhang.markdown-all-in-one
     - role: staticdev.signal
     - role: manala.zsh
     - role: manala.ohmyzsh
