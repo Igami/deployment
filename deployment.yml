@@ -48,6 +48,12 @@
 
     ## CAD/CAM Programs ##
 
+    - name: Add Debian experimental apt key from keyserver
+      ansible.builtin.apt_key:
+        keyserver: keyring.debian.org
+        id: 648ACFD622F3D138
+          # - 0E98404D386FA1D9
+
     - name: Install Prusa Slicer from default apt repositorys
       apt:
         name: prusa-slicer
@@ -178,6 +184,10 @@
     - name: Install pdfgrep from default apt repositorys
       apt:
         name: pdfgrep
+
+    - name: Install pdftk from default apt repositorys
+      apt:
+        name: pdftk
 
 
     ## Coding Programs ##
